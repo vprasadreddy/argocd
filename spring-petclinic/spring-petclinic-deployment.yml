@@ -18,3 +18,5 @@ spec:
         name: spring-petclinic
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: docker-hub-key
