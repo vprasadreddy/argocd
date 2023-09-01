@@ -16,5 +16,12 @@ spec:
       containers:
       - image: prasadreddy2349/nginx
         name: nginx
-        ports:
+        resources:
+            limits:
+              memory: 200Mi
+              cpu: 1
+            requests:
+              memory: 100Mi
+              cpu: 100m
+      ports:
         - containerPort: 80
